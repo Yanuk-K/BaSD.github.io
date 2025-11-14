@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
       <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
         style={{
-          backgroundImage: `url(${https://github.com/Yanuk-K/BaSD.github.io/blob/main/components/icons/SanDiego_banner_01-back.jpeg?raw=true})`,
+          backgroundImage: `url(${"https://github.com/Yanuk-K/BaSD/blob/main/components/icons/SanDiego_banner_01-back.jpeg?raw=true"})`,
           transition: 'transform 0.3s ease-out',
           ...parallaxStyle,
         }}
