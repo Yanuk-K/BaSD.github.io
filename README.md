@@ -24,21 +24,43 @@ This is the official website for Blockchain at UC San Diego, built with React, T
 
 ## Deploy to GitHub Pages
 
-This project is configured for automatic deployment to GitHub Pages.
+This project uses GitHub Actions for automatic deployment to GitHub Pages.
 
-**Prerequisites:** Git and GitHub repository set up
+### Automatic Deployment
 
-1. Build the project:
-   ```bash
-   npm run build
-   ```
+The site is automatically deployed whenever you push changes to the `main` branch. No manual deployment steps are required!
 
-2. Deploy to GitHub Pages:
-   ```bash
-   npm run deploy
-   ```
+### Manual Deployment
 
-The site will be available at: `https://Yanuk-K.github.io/BaSD`
+You can also trigger a deployment manually:
+
+1. Go to your repository on GitHub
+2. Navigate to the **Actions** tab
+3. Select **"Deploy static content to Pages"** workflow
+4. Click **"Run workflow"**
+
+### GitHub Pages Settings
+
+Make sure GitHub Pages is enabled in your repository:
+
+1. Go to **Settings** → **Pages** in your repository
+2. Under **Build and deployment**, select **GitHub Actions** as the source
+3. The site will be available at: `https://Yanuk-K.github.io/BaSD`
+
+### Local Development
+
+For local development, use:
+
+```bash
+npm run dev
+```
+
+For production build testing:
+
+```bash
+npm run build
+npm run preview
+```
 
 ## Project Structure
 
@@ -53,4 +75,4 @@ The site will be available at: `https://Yanuk-K.github.io/BaSD`
 - TypeScript
 - Vite 6.2.0
 - Tailwind CSS
-- gh-pages for deployment
+- GitHub Actions for deployment
